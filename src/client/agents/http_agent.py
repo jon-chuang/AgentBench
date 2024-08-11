@@ -23,7 +23,7 @@ def no_ssl_verification():
         opened_adapters.add(self.get_adapter(url))
 
         settings = old_merge_environment_settings(self, url, proxies, stream, verify, cert)
-        settings['verify'] = False
+        # settings['verify'] = False
 
         return settings
 
